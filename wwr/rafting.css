@@ -84,6 +84,7 @@ article {
 /* Float the image inside the article to the right of the paragraph */
 article img {
   float: right;
+  bottom: 500;
   margin-left: 15px;
   /* Add spacing between the image and the text */
   border: 2px solid var(--primary-color);
