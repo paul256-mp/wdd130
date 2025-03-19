@@ -1,4 +1,10 @@
 
+/* setting up the roots */
+:root{
+  --primary-color: #333;
+  --secondary-color: #eee;
+  font-style: normal;
+}
 main {
   max-width: 840px;
 }
