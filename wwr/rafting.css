@@ -1,20 +1,14 @@
 
 /* Define CSS variables in the :root pseudo-class */
 :root {
-  --primary-color: #4CAF50;
-  /* Example green */
-  --secondary-color: #FF9800;
-  /* Example orange */
-  --background-color: #1075a1;
-  /* Example light gray */
-  --text-color: #171414;
-  /* Example dark gray */
-  --heading-color: #0f3963;
-  /* A darker shade for headings */
-  --link-color: #313de4;
-  /* Example red for links */
+  --primary-color: #0572ba;
+  --secondary-color: #578FCA;
+  --accent1-color: #3674B5;
+  --accent-color: #A1E3F9;
+  --heading-color: #110827;
+  --text-color: #050321;
+  --link-color: #0c51f2;
 }
-
 /* Style headings (h1, h2, etc.) and paragraphs */
 h1,
 h2,
