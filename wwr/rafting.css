@@ -50,11 +50,11 @@ a img {
 /* Position the h1 heading absolutely */
 h1 {
   position: absolute;
-  top: 160px;
+  top: 200px;
   /* Adjust as per your design */
   padding: 10px;
   background-color: rgba(168, 188, 231, 0.804);
-  left: 10px;
+  left: 300px;
   /* Adjust as per your design */
   color: var(--heading-color);
   /* Use color variable for consistency */
@@ -69,14 +69,14 @@ article {
   position: absolute;
   bottom: 10px;
   /* Adjust to fit your layout */
-  left: 50px;
+  left: 300px;
   /* Adjust to fit your layout */
-  background-color: rgba(79, 106, 161, 0.8);
+  background-color: rgba(92, 136, 230, 0.804);
   /* Semi-transparent background */
-  padding: 20px;
+
+  padding: 1px;
+  
   /* Add some inner spacing */
-  border-radius: 8px;
-  /* Optional: rounded corners */
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   /* Add subtle shadow for readability */
 }
@@ -84,10 +84,9 @@ article {
 /* Float the image inside the article to the right of the paragraph */
 article img {
   float: right;
-  bottom: 500;
-  margin-left: 15px;
+  margin-left: 30px;
   /* Add spacing between the image and the text */
-  border: 2px solid var(--primary-color);
+  border: 1px solid var(--primary-color);
   /* Optional: Add border for styling */
   border-radius: 5px;
   /* Optional: rounded corners */
