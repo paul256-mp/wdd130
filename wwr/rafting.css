@@ -1,95 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-/* Define CSS variables in the :root pseudo-class */
+
 :root {
-  --primary-color: #0572ba;
-  --secondary-color: #578FCA;
-  --accent1-color: #3674B5;
-  --accent-color: #A1E3F9;
-  --heading-color: #110827;
-  --text-color: #050321;
-  --link-color: #0c51f2;
+  --head-background-color: #a8c5e1;
+  --heading-text-color: #13528A;
+  --heading-font-family: 'Roboto Condensed', sans-serif;
+  --paragraph-font-color: #000000;
+  --padding: 1rem;
+  --border: 1px solid #000;
 }
-/* Style headings (h1, h2, etc.) and paragraphs */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: var(--heading-color);
-  font-family: 'Arial', sans-serif;
+a{
+text-decoration: none;
 }
 
-p {
-  color: var(--text-color);
-  font-family: 'Georgia', serif;
-}
-
-/* Style hyperlinks and remove underlines from image links */
-a {
-  color: var(--link-color);
-  text-decoration: none;
-  /* Remove underline from all links */
-}
-
-a img {
-  text-decoration: none;
-  /* Ensure underline is not applied to images */
-}
-.hero image {
+.hero img{
   display: block;
   width: 100%;
   height: auto;
 }
-/* Position the h1 heading absolutely */
+
 h1 {
   position: absolute;
+  background-color: #7fa5af;
   top: 200px;
-  /* Adjust as per your design */
-  padding: 10px;
-  background-color: rgba(168, 188, 231, 0.804);
-  left: 300px;
-  /* Adjust as per your design */
-  color: var(--heading-color);
-  /* Use color variable for consistency */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    /* Add subtle shadow for readability */
-  
-  z-index: 10;
-  /* Ensure it stays on top if needed */
+  right: 500px;
 }
-/* Style and position the article absolutely */
+
 article {
   position: absolute;
-  bottom: 10px;
-  /* Adjust to fit your layout */
-  left: 300px;
-  /* Adjust to fit your layout */
-  background-color: rgba(92, 136, 230, 0.804);
-  /* Semi-transparent background */
-
-  padding: 1px;
+  background-color: rgb(42, 115, 174); 
+  bottom: 5px;
+  right: 500px;
+  box-shadow: 0px 4px 6px #a8c5e1;
   
-  /* Add some inner spacing */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  /* Add subtle shadow for readability */
-}
 
-/* Float the image inside the article to the right of the paragraph */
-article img {
+  }
+
+article img{
   float: right;
-  margin-left: 30px;
-  /* Add spacing between the image and the text */
-  border: 1px solid var(--primary-color);
-  /* Optional: Add border for styling */
-  border-radius: 5px;
-  /* Optional: rounded corners */
-}
-
-/* Style the paragraph inside the article */
-article p {
-  color: var(--text-color);
-  line-height: 1.6;
-  /* Improve readability */
-  font-family: 'Georgia', serif;
+  margin: 10px;
 }
