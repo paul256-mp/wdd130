@@ -7,6 +7,8 @@
 }
 main {
   max-width: 840px;
+  grid-column: 2/3;
+  margin: auto;
 }
 /* commenting on image */
 aside {
@@ -15,6 +17,9 @@ aside {
   background-color: #eee;
   margin: 1rem;
   border: 1px solid rgb(000/0.2);
+  width: 20px;
+  grid: column 1px / 2px; 
+  grid: row 1px / 2px; 
   /*1️⃣*/
   background: #eee;
   text-align: center;
@@ -61,4 +66,9 @@ font-style: oblique;
 font-weight: 500;
 }
 
-main, grid, footer
+.grid{
+  display: grid;
+  align-items:center ;
+}
+
+}
