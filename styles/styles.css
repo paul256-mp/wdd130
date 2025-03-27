@@ -40,3 +40,25 @@ footer {
   border-top: 1px solid #000;
   text-align: center;
 }
+header, footer {
+ max-width: 840px;
+  margin: auto;
+}
+
+nav{
+  background-color: cadetblue;
+  padding: 10px;
+  display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+nav a {
+  display: block;
+padding: 0.5rem;
+text-decoration: none;
+font-style: oblique;
+font-weight: 500;
+}
+
+main, grid, footer
