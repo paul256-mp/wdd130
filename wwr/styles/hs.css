@@ -1,0 +1,103 @@
+/* CSS Additions */
+/* Header Grid Layout */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+/* Navigation Flex Layout */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+/* History Section Grid */
+.history-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+}
+
+.history-section img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Adventures Grid */
+.adventure-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.adventure-grid figure {
+  margin: 0;
+  text-align: center;
+}
+
+.adventure-grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Footer Layout */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--secondary-color);
+}
+
+.social-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .history-section {
+    grid-template-columns: 1fr;
+  }
+
+  .adventure-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .adventure-grid {
+    grid-template-columns: 1fr;
+  }
+}

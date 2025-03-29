@@ -38,3 +38,77 @@ article img{
   float: right;
   margin: 10px;
 }
+header {
+  display: grid;
+  grid-template-columns:auto 1fr;
+background-color: #9ac2e5;
+align-items:center;
+padding:10px 20px;
+
+}
+
+.container a {
+color: rgb(28, 32, 67);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  
+}
+.logo
+{
+  width: 100px;
+  height: auto;
+}
+
+ .history-section
+ {
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+ } 
+
+ .history-section img
+ {
+  width: 100%;
+    border-radius: 8px;
+ }
+
+
+
+.adventure-grid 
+{
+  display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+
+}
+ .adventure-grid figure {
+   margin: 0;
+   text-align: center;
+   grid-template-columns: 1fr 1fr;
+ }
+
+ .adventure-grid img {
+   width: 100%;
+   height: 150px;
+   object-fit: cover;
+   border-radius: 4px;
+ }
+ footer {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 2rem;
+   background-color: var(--secondary-color);
+ }
