@@ -31,11 +31,11 @@ article {
   bottom: 5px;
   right: 500px;
   box-shadow: 0px 4px 6px #a8c5e1;
-  
 
   }
 
-article img{
+article img 
+{
   float: right;
   margin: 10px;
 }
@@ -74,8 +74,6 @@ color: rgb(28, 32, 67);
   display: flex;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    
-
     padding: 2rem;
     align-items: center;
  } 
