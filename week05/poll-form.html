@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD130| HTML FORM- USER POLL</title>
+</head>
+<body>
+  <Header>
+    <h1> WDD130| PAUL MAKUMBI| HTML FORM-USER POLL</h1>
+  </Header>
+  <main>
+    <form>
+      <fieldset>
+        <legend>contact information</legend>
+          <label for="fullname" >fullname</label><br>
+          <input type="text" id="fullname"  ><br>
+          <label for="email">User Email:</label><br>
+          <input type="email" id="email" name="user_email">
+
+      </fieldset>
+      <fieldset>
+        <legend>Question</legend>
+          <label for="browser">what is your favorate browser?</label><br>
+          <select name="browser" id="browser">
+           <option value="google">google</option>
+           <option value="firefox">firefox</option>
+           <option value="safari">safari</option>
+           <option value="brave">brave</option>
+          </select><br>
+        <label for="pet">do you have a household pet?</label>
+        <input type="checkbox" id="pet" name="pet"><br>
+        <label for="feedback">list places you have visted</label><br>
+        <textarea name="feedback" id="feedback" rows="4" placeholder="qatar kenya uganda tanzania"></textarea>
+      </fieldset >
+        <button>submit poll</button>
+    </form>
+  </main>
+  <footer>
+  <p> @2025 | HTML - USER POLL ACTIVATY| PAUL MAKUMBI </p>
+  </footer>
+</body>
+</html>
