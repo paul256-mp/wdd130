@@ -107,9 +107,9 @@ color: rgb(28, 32, 67);
 }
 .contact-section {
   display:grid;
-  margin: 0 auto;
+  margin: 2em auto;
   padding: 1em;
-   border: #000 solid 1px;
+  height: 30em; border: #000 solid 1px;
    border-radius: 1em;
    background-color: #e1e6ea;
 }
@@ -121,6 +121,7 @@ color: rgb(28, 32, 67);
     align-items: center;
     gap: 1rem;
     top: 750px; ;
+    size: 10em;
     right: 100px;
   }
  
