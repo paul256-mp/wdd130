@@ -47,24 +47,30 @@
       <form action="#" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required><br>
-
+      
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br>
-
+      
         <label for="phone">Phone:</label>
         <input type="tel" id="phone" name="phone" required><br>
-
-        <label for="message">purpose for contact</label><br>
-        <input radio name="purpose" value="">general Inquiry<br>
-
-        <input radio name="purpose" value="">reservation question?<br>
-        <input radio name="purpose" value="">website suggestion<br>
-
-        <label for="text">message</label><br>
-        <textarea name="message" id="message"></textarea><br>
-
-        <button type="submit">submit</button><br>
-      </section>
+      
+        <fieldset>
+          <legend>Purpose for contact:</legend>
+      
+          <input type="radio" id="general" name="purpose" value="general" required>
+          <label for="general">General Inquiry</label><br>
+      
+          <input type="radio" id="reservation" name="purpose" value="reservation">
+          <label for="reservation">Reservation Question</label><br>
+      
+          <input type="radio" id="suggestion" name="purpose" value="suggestion">
+          <label for="suggestion">Website Suggestion</label>
+        </fieldset>
+        <br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+        
+      </form>
 
         <section class="map-section">
           
