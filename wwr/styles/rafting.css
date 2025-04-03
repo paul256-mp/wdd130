@@ -27,18 +27,19 @@ h1 {
 
 article {
   position: absolute;
-  background-color: rgb(42, 115, 174); 
-  bottom: 5px;
-  right: 500px;
+  background-color: rgb(176, 197, 214); 
+  bottom:  0px;
+  top: 300px;
+  right: 400px;
   box-shadow: 0px 4px 6px #a8c5e1;
 
-  }
+}
 
   .history-section{
     display: flex;
       grid-template-columns: 1fr 1fr;
       gap: 2rem;
-      padding: 2rem;
+      padding: 1rem;
       align-items: center;
   }
       .history-section img {
@@ -74,6 +75,8 @@ article img
 {
   float: right;
   margin: 10px;
+ 
+  
 }
 header {
   display: grid;
@@ -120,7 +123,7 @@ color: rgb(28, 32, 67);
     justify-content: flex-end;
     align-items: center;
     
-    top: 750px; ;
+    top: 1100px; ;
     
     border:0;
     right: 100px;
