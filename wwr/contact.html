@@ -5,119 +5,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="author" content="paul makumbi">
-  <title>Contact Us | White Water Rafting </title>
+  <meta name="author" content="Paul Makumbi">
+  <title>Contact Us | White Water Rafting Adventures</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-
   <meta name="description"
     content="Contact White Water Rafting Adventures for booking inquiries, trip information, safety details, and adventure planning. Get quick responses from our expert team.">
-
   <link rel="stylesheet" href="styles/rafting.css">
-
 </head>
 
 <body>
   <header>
-    <img src="images/logo.jpg" alt="logo">
-
-    <nav class="container">
+    <img src="images/logo.jpg" alt="White Water Rafting Adventures Logo">
+    <nav class="container" aria-label="Main navigation">
       <a href="index.html">Home</a>
-      <a href="Trips.html">Trips</a>
+      <a href="trips.html">Trips</a>
       <a href="about.html">About Us</a>
-      <a href="contact.html">Contact Us</a>
+      <a href="contact.html" aria-current="page">Contact Us</a>
     </nav>
   </header>
+
   <main>
     <div class="hero">
-
-      <img src="images/hero.jpg" alt="" width="1000" height="500">
-      <h1> WHITE WATER RAFTING</h1>
-      <Article>
-        <h2> why you choose us</h2>
-        <p>Are you busy at work and get stressed, don't worry anymore.come have fun</p>
-        <img src="images/employee.jpg" alt="our happy employee" width="200">
-      </Article>
+      <img src="images/hero.jpg" alt="Exciting white water rafting adventure" width="1284" height="500">
+      <h1>White Water Rafting Adventures</h1>
+      <article class="mission">
+        <h2>Why Choose Us</h2>
+        <p>Are you busy at work and feeling stressed? Don't worry anymore - come have fun with us on the river!</p>
+        <img src="images/employee.jpg" alt="Our happy employee guiding a rafting trip" width="200">
+      </article>
     </div>
 
     <section class="contact-section">
-      <h3>Contact Us</h3>
-      <form action="#" method="post">
+      <h2>Contact Us</h2>
+      <p>Have questions or ready to book your adventure? Fill out the form below and we'll get back to you within 24
+        hours.</p>
 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
-      
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
-      
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required><br>
-      
-        <fieldset>
-          <legend>Purpose for contact:</legend>
-      
-          <input type="radio" id="general" name="purpose" value="general" required>
-          <label for="general">General Inquiry</label><br>
-      
-          <input type="radio" id="reservation" name="purpose" value="reservation">
-          <label for="reservation">Reservation Question</label><br>
-      
-          <input type="radio" id="suggestion" name="purpose" value="suggestion">
-          <label for="suggestion">Website Suggestion</label>
-        </fieldset>
-        <br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
-        <button type="submit">send message</button>
-        
-          <section class="newsletter-signup">
-            <h2>Stay Updated with Our Adventures</h2>
-            <p>Subscribe to our newsletter for exclusive offers, trip updates, and rafting tips!</p>
-          
-            <form id="newsletter-form" action="/submit-newsletter" method="post">
-              <div class="form-group">
-                <label for="newsletter-email" class="visually-hidden">Email Address</label>
-                <input type="email" id="newsletter-email" name="email" placeholder="Enter your email address" required
-                  aria-required="true">
-                <button type="submit" class="btn-subscribe">
-                  Subscribe
-                  <span class="visually-hidden">to our newsletter</span>
-                </button>
-              </div>
-              <div class="privacy-notice">
-                <input type="checkbox" id="privacy-agree" name="privacy" required>
-                <label for="privacy-agree">
-                  I agree to the <a href="/privacy-policy">Privacy Policy</a> and receiving emails
-                </label>
-              </div>
-            </form>
-          </section>
+      <form action="submit_form.php" method="post">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
         </div>
-      </section>
-        <section class="map-section">
-          <h4> location</h4>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28706.734412386282!2d51.488741!3d25.9239995!3m2!1i1024!2i768!4f13.1!4m3!3e6!4m0!4m0!5e0!3m2!1sen!2sqa!4v1743622982526!5m2!1sen!2sqa"
-            width="600" height="450"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <fieldset class="form-group">
+          <legend>Purpose for contact:</legend>
+          <div class="radio-group">
+            <input type="radio" id="general" name="purpose" value="general" required>
+            <label for="general">General Inquiry</label>
+          </div>
+
+          <div class="radio-group">
+            <input type="radio" id="reservation" name="purpose" value="reservation">
+            <label for="reservation">Reservation Question</label>
+          </div>
+
+          <div class="radio-group">
+            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+            <label for="suggestion">Website Suggestion</label>
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </section>
+
+    <section class="newsletter-signup">
+      <h2>Stay Updated with Our Adventures</h2>
+      <p>Subscribe to our newsletter for exclusive offers, trip updates, and rafting tips!</p>
+
+      <form id="newsletter-form" action="newsletter_signup.php" method="post">
+        <div class="form-group">
+          <label for="newsletter-email" class="visually-hidden">Email Address</label>
+          <input type="email" id="newsletter-email" name="email" placeholder="Enter your email address" required
+            aria-required="true">
+          <button type="submit" class="btn-subscribe">
+            Subscribe
+            <span class="visually-hidden">to our newsletter</span>
+          </button>
+        </div>
+        <div class="privacy-notice">
+          <input type="checkbox" id="privacy-agree" name="privacy" required>
+          <label for="privacy-agree">
+            I agree to the <a href="/privacy-policy">Privacy Policy</a> and receiving emails
+          </label>
+        </div>
+      </form>
+    </section>
+
+    <section class="map-section">
+      <h2>Our Location</h2>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28706.734412386282!2d51.488741!3d25.9239995!3m2!1i1024!2i768!4f13.1!4m3!3e6!4m0!4m0!5e0!3m2!1sen!2sqa!4v1743622982526!5m2!1sen!2sqa"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Our location on Google Maps">
+        </iframe>
+      </div>
+      <address>
+        White Water Rafting Adventures<br>
+        123 River Road<br>
+        Adventure City, AC 12345<br>
+        Phone: <a href="tel:+1234567890">(123) 456-7890</a><br>
+        Email: <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a>
+      </address>
+    </section>
   </main>
+
   <footer>
-    <nav class="footer">
-      <a href="https://www.facebook.com">
-        <img src="images/facebook.webp" alt="facebook" width="30">
+    <nav class="footer" aria-label="Social media navigation">
+      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+        <img src="images/facebook.webp" alt="Visit us on Facebook" width="30">
       </a>
-      <a href="https://www.messager.com">
-        <img src="images/messager.webp" alt="messager" width="30">
+      <a href="https://www.messenger.com" target="_blank" rel="noopener noreferrer">
+        <img src="images/messager.webp" alt="Message us on Messenger" width="30">
       </a>
-      <a href="https://www.whatsapp.com">
-        <img src="images/whatsapp.png" alt="whatsapp" width="30">
+      <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
+        <img src="images/whatsapp.png" alt="Contact us on WhatsApp" width="30">
       </a>
-      <a href="https://app.moqups.com/tchU111cXwVEdwYCOUEYJt2VrxRcmnR9/view/page/a05d37ab2">
-        <img src="https://app.moqups.com/tchU111cXwVEdwYCOUEYJt2VrxRcmnR9/view/page/a05d37ab2" alt="wireframe" width="30"></a>
-      <p>white water rafting |paul makumbi 2025</p>
     </nav>
+    <p>&copy; 2025 White Water Rafting Adventures | Created by Paul Makumbi</p>
+    <p><a href="https://app.moqups.com/tchU111cXwVEdwYCOUEYJt2VrxRcmnR9/view/page/a05d37ab2" target="_blank">View
+        Wireframe</a></p>
   </footer>
 </body>
+
 </html>
