@@ -1,5 +1,4 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -9,140 +8,195 @@
   <title>Contact Us | White Water Rafting Adventures</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <meta name="description"
-    content="Contact White Water Rafting Adventures for booking inquiries, trip information, safety details, and adventure planning. Get quick responses from our expert team.">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta name="description" content="Contact White Water Rafting Adventures for booking inquiries, trip information, safety details, and adventure planning. Get quick responses from our expert team.">
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
-  <header>
-    <img src="images/logo.jpg" alt="White Water Rafting Adventures Logo">
-    <nav class="container" aria-label="Main navigation">
+   <header>
+    <nav>
+      <img src="images/logo.jpg" alt="White Water Rafting Logo">
       <a href="index.html">Home</a>
+      <a href="about.html">About</a>
       <a href="trips.html">Trips</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html" aria-current="page">Contact Us</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
+  
 
   <main>
-    <div class="hero">
+    <section class="hero">
       <img src="images/hero.jpg" alt="Exciting white water rafting adventure" width="1284" height="500">
-      <h1>White Water Rafting Adventures</h1>
-      <article class="mission">
-        <h2>Why Choose Us</h2>
-        <p>Are you busy at work and feeling stressed? Don't worry anymore - come have fun with us on the river!</p>
-        <img src="images/employee.jpg" alt="Our happy employee guiding a rafting trip" width="200">
-      </article>
-    </div>
-
-    <section class="contact-section">
-      <h2>Contact Us</h2>
-      <p>Have questions or ready to book your adventure? Fill out the form below and we'll get back to you within 24
-        hours.</p>
-
-      <form action="submit_form.php" method="post">
-        <div class="form-group">
-          <label for="name">Full Name:</label>
-          <input type="text" id="name" name="name" required>
-        </div>
-
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-        </div>
-
-        <div class="form-group">
-          <label for="phone">Phone Number:</label>
-          <input type="tel" id="phone" name="phone" required>
-        </div>
-
-        <fieldset class="form-group">
-          <legend>Purpose for contact:</legend>
-          <div class="radio-group">
-            <input type="radio" id="general" name="purpose" value="general" required>
-            <label for="general">General Inquiry</label>
-          </div>
-
-          <div class="radio-group">
-            <input type="radio" id="reservation" name="purpose" value="reservation">
-            <label for="reservation">Reservation Question</label>
-          </div>
-
-          <div class="radio-group">
-            <input type="radio" id="suggestion" name="purpose" value="suggestion">
-            <label for="suggestion">Website Suggestion</label>
-          </div>
-        </fieldset>
-
-        <div class="form-group">
-          <label for="message">Your Message:</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
+      <div class="hero-content">
+        <h1>Contact White Water Rafting Adventures</h1>
+        <p>Ready for your next adventure? We're here to help!</p>
+      </div>
     </section>
 
-    <section class="newsletter-signup">
-      <h2>Stay Updated with Our Adventures</h2>
-      <p>Subscribe to our newsletter for exclusive offers, trip updates, and rafting tips!</p>
+    <section class="contact-info">
+      <div class="contact-methods">
+        <article>
+          <h2>Get in Touch</h2>
+          <address>
+            <p><strong>Phone:</strong> <a href="tel:+1234567890">(123) 456-7890</a></p>
+            <p><strong>Email:</strong> <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a></p>
+            <p><strong>Address:</strong> 123 River Road, Adventure City, AC 12345</p>
+          </address>
+          <p>Our office hours are Monday-Friday, 9am-5pm</p>
+        </article>
 
-      <form id="newsletter-form" action="newsletter_signup.php" method="post">
-        <div class="form-group">
-          <label for="newsletter-email" class="visually-hidden">Email Address</label>
-          <input type="email" id="newsletter-email" name="email" placeholder="Enter your email address" required
-            aria-required="true">
-          <button type="submit" class="btn-subscribe">
-            Subscribe
-            <span class="visually-hidden">to our newsletter</span>
-          </button>
-        </div>
-        <div class="privacy-notice">
-          <input type="checkbox" id="privacy-agree" name="privacy" required>
-          <label for="privacy-agree">
-            I agree to the <a href="/privacy-policy">Privacy Policy</a> and receiving emails
-          </label>
+        <article class="emergency-contact">
+          <h2>Emergency Contact</h2>
+          <p>For urgent matters during trips:</p>
+          <p><strong>24/7 Support:</strong> <a href="tel:+1987654321">(987) 654-3210</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-form-section">
+      <h2>Send Us a Message</h2>
+      <p>Have questions or ready to book your adventure? Fill out the form below and we'll respond within 24 hours.</p>
+
+      <form id="contact-form" action="submit_form.php" method="post" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="name">Full Name*</label>
+            <input type="text" id="name" name="name" required aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address*</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+          </div>
+
+          <div class="form-group">
+            <label for="trip">Interested Trip (Optional)</label>
+            <select id="trip" name="trip">
+              <option value="">Select a trip</option>
+              <option value="beginner">Beginner's Adventure</option>
+              <option value="intermediate">River Challenge</option>
+              <option value="advanced">Extreme Rapids</option>
+              <option value="family">Family Float</option>
+            </select>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">Your Message*</label>
+            <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+          </div>
+
+          <div class="form-group full-width">
+            <div class="radio-group">
+              <p>Preferred Contact Method:</p>
+              <input type="radio" id="contact-email" name="contact-method" value="email" checked>
+              <label for="contact-email">Email</label>
+              
+              <input type="radio" id="contact-phone" name="contact-method" value="phone">
+              <label for="contact-phone">Phone</label>
+              
+              <input type="radio" id="contact-either" name="contact-method" value="either">
+              <label for="contact-either">Either</label>
+            </div>
+          </div>
+
+          <div class="form-group full-width">
+            <button type="submit" class="btn-primary">Send Message</button>
+          </div>
         </div>
       </form>
     </section>
 
     <section class="map-section">
-      <h2>Our Location</h2>
-      <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28706.734412386282!2d51.488741!3d25.9239995!3m2!1i1024!2i768!4f13.1!4m3!3e6!4m0!4m0!5e0!3m2!1sen!2sqa!4v1743622982526!5m2!1sen!2sqa"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" title="Our location on Google Maps">
+      <h2>Find Our Headquarters</h2>
+      <div class="map-container" aria-hidden="true">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28706.734412386282!2d51.488741!3d25.9239995!3m2!1i1024!2i768!4f13.1!4m3!3e6!4m0!4m0!5e0!3m2!1sen!2sqa!4v1743622982526!5m2!1sen!2sqa" 
+          width="600" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade" 
+          title="White Water Rafting Adventures Location">
         </iframe>
       </div>
-      <address>
-        White Water Rafting Adventures<br>
-        123 River Road<br>
-        Adventure City, AC 12345<br>
-        Phone: <a href="tel:+1234567890">(123) 456-7890</a><br>
-        Email: <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a>
-      </address>
+      <div class="directions">
+        <h3>Directions</h3>
+        <p>From downtown Adventure City, take River Road east for 3 miles. We're located on the north side of the road, just past the Adventure Bridge.</p>
+        <p>Free parking available on-site.</p>
+      </div>
+    </section>
+
+    <section class="faq-preview">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>What should I bring on my rafting trip?</summary>
+        <p>We recommend bringing sunscreen, a change of clothes, water shoes, and a sense of adventure! We provide all necessary safety equipment.</p>
+      </details>
+      <details>
+        <summary>What is your cancellation policy?</summary>
+        <p>Full refunds are available up to 48 hours before your scheduled trip. Within 48 hours, we offer rescheduling or a 50% refund.</p>
+      </details>
+      <details>
+        <summary>Do you offer group discounts?</summary>
+        <p>Yes! Groups of 8 or more receive a 15% discount. Contact us for special arrangements for larger groups.</p>
+      </details>
+      <p class="more-faq"><a href="faq.html">View all frequently asked questions →</a></p>
     </section>
   </main>
 
   <footer>
-    <nav class="footer" aria-label="Social media navigation">
-      <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-        <img src="images/facebook.webp" alt="Visit us on Facebook" width="30">
-      </a>
-      <a href="https://www.messenger.com" target="_blank" rel="noopener noreferrer">
-        <img src="images/messager.webp" alt="Message us on Messenger" width="30">
-      </a>
-      <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer">
-        <img src="images/whatsapp.png" alt="Contact us on WhatsApp" width="30">
-      </a>
-    </nav>
-    <p>&copy; 2025 White Water Rafting Adventures | Created by Paul Makumbi</p>
-    <p><a href="https://app.moqups.com/tchU111cXwVEdwYCOUEYJt2VrxRcmnR9/view/page/a05d37ab2" target="_blank">View
-        Wireframe</a></p>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <nav aria-label="Footer navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="trips.html">Trip Packages</a></li>
+            <li><a href="safety.html">Safety Information</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-section">
+        <h3>Connect With Us</h3>
+       
+      <div class="social-links" aria-label="Social media links">
+        <h3>Connect With Us</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <img src="images/facebook.webp" alt="Facebook" width="30">
+          </a>
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <img src="images/messager.webp" alt="Instagram" width="30">
+          </a>
+          <a href="https://www.whatsapp.com" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <img src="images/whatsapp.png" alt="WhatsApp" width="30">
+          </a>
+        </div>
+      </div>
+        <p>Subscribe to our newsletter for special offers!</p>
+        <form class="footer-newsletter">
+          <label for="footer-email" class="visually-hidden">Email</label>
+          <input type="email" id="footer-email" placeholder="Your email">
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 White Water Rafting Adventures | Created by Paul Makumbi</p>
+      <p><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
+      <p><a href="wireframe.html" target="_blank">View Wireframe</a></p>
+    </div>
   </footer>
 </body>
 
